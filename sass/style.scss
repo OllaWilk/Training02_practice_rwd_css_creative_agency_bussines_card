@@ -10,6 +10,8 @@ $color-three: #99bb89;
 $font-header: 'Signika', sans-serif;
 $font-text:  'Inconsolata', monospace;
 
+$transition: all 1s;
+
 @mixin center-position() {
     top: 50%;
     left: 50%;
@@ -34,7 +36,7 @@ body {
     line-height: 1.7;
     font-family: $font-text;
     color: $color-light;
-    background-color: $color-three;
+   // background-color: $color-three;
 }
 
 section {
@@ -45,6 +47,34 @@ section {
     max-width: 1140px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
+.btn_one {
+    border-color: $color-light;
+    color: $color-light;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    &:hover {
+       color: $color-twoo;
+    }
 }
 
 /*Navigation*/
@@ -99,7 +129,41 @@ section {
             }
         }
     }
-} 
+}
+
+/*Splash*/
+
+.splash {
+    background-color: $color-twoo;
+    color: $color-light;
+    min-width: 500px;
+    display: flex;
+    min-height: 500px;
+
+    .splash_inner {
+        margin: auto;
+        max-width: 70%;
+
+        .page_title{
+            margin: 0;
+            font-size: 72px;
+            word-spacing: -24px;
+            font-weight: 500;
+            line-height: 1.2;
+            span {
+                font-size: 90px;
+                font-weight: 700;
+                color: $color-three;
+            }
+        }
+
+        .page_subtitle {
+            margin: 24px 0;
+            font-weight: 400px;
+            font-size: 16px;
+        }
+    }
+}
 
 
 
