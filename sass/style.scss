@@ -2,12 +2,12 @@
 $color-dark: #324155;
 $color-light: #f7f6f4;
 
-$color-one: #20bcc1;
+$color-one: #c14e20;
 $color-twoo: #3c8d83;
 $color-three: #99bb89;
 
 
-$font-header: 'Signika', sans-serif;
+$font-loremIpsum: 'Signika', sans-serif;
 $font-text:  'Inconsolata', monospace;
 
 $transition: all 1s;
@@ -35,7 +35,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     font-family: $font-text;
-    color: $color-light;
+    color: $color-dark;
    // background-color: $color-three;
 }
 
@@ -46,7 +46,7 @@ section {
 .container {
     max-width: 1140px;
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 96px auto 0 auto;
 }
 
 .btn {
@@ -75,6 +75,44 @@ section {
     &:hover {
        color: $color-twoo;
     }
+}
+
+.btn_twoo {
+    border-color: $color-three;
+    color: $color-three;
+    background-image: linear-gradient(90deg,$color-three 50%, transparent 50%);
+    &:hover {
+       color: $color-light;
+    }
+}
+
+.btn_three {
+    border-color: $color-twoo;
+    color: $color-twoo;
+    background-image: linear-gradient(90deg,$color-twoo 50%, transparent 50%);
+    &:hover {
+       color: $color-light;
+    }
+}
+
+.btn_four {
+    border-color: $color-one;
+    color: $color-one;
+    background-image: linear-gradient(90deg,$color-one 50%, transparent 50%);
+    &:hover {
+       color: $color-light;
+    }
+}
+
+.title {
+    font-size: 48px;
+    margin: 0 0 72px 0;
+}
+
+.article_title {
+    font-size: 24px;
+    margin: 0 0 12px 0;
+    font-weight: bold;
 }
 
 /*Navigation*/
@@ -150,6 +188,7 @@ section {
             word-spacing: -24px;
             font-weight: 500;
             line-height: 1.2;
+
             span {
                 font-size: 90px;
                 font-weight: 700;
@@ -165,5 +204,32 @@ section {
     }
 }
 
+/*Our services*/
+
+.articles {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .box {
+        flex: 0 0 33.333%;
+        position: relative;
+        padding-right: 50px;
+
+        .number {
+            position: absolute;
+            color: $color-three;
+            font-size: 144px;
+            line-height: 1;
+            opacity: 0.2;
+            font-family: $font-loremIpsum;
+        }
+
+        p:first-of-type {
+            font-weight: bold;
+        }
+    }
+}
 
 
