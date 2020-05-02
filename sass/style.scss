@@ -2,7 +2,7 @@
 $color-dark: #324155;
 $color-light: #f7f6f4;
 
-$color-one: #c13820;
+$color-one: #20bcc1;
 $color-twoo: #3c8d83;
 $color-three: #99bb89;
 
@@ -34,7 +34,7 @@ body {
     line-height: 1.7;
     font-family: $font-text;
     color: $color-light;
-    background-color: $color-twoo;
+    background-color: $color-three;
 }
 
 section {
@@ -49,9 +49,9 @@ section {
 
 /*Navigation*/
 
-nav {
-    background-color: $color-three;
-    padding: 12px 0;
+.navigation {
+    background-color: $color-twoo;
+    padding: 12px 36px;
 
     ul {
         margin: 0;
@@ -60,17 +60,46 @@ nav {
 
         li {
             display: inline-block;
-            margin-left: 36px;
+            margin-right: 36px;
             position: relative;
 
             a {
                 text-decoration: none;
                 color: $color-light;
                 &:hover {
-                    color: $color-twoo;
+                    color: $color-light;
                 }
             }
         }
     }
-}
+
+    li {
+        ul{
+            display: none;
+            li {
+                display: block;
+                margin-bottom: 12px;
+                margin-right: 0;
+            }
+        }
+        &:hover ul {
+            display: block;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 12px;
+            background: $color-twoo;
+        }
+        li a {
+            color: $color-light;
+            padding: 0 24px;
+            &:hover {
+                color: $color-one;
+            }
+        }
+    }
+} 
+
+
 
