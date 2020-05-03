@@ -22,6 +22,16 @@ section {
   margin: 96px auto 0 auto;
 }
 
+.wrap {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
 .btn {
   display: inline-block;
   min-width: 160px;
@@ -80,6 +90,14 @@ section {
 
 .btn_four:hover {
   color: #f7f6f4;
+}
+
+.btn_five {
+  border: none;
+  margin: 36px 0;
+  padding: 0;
+  text-align: left;
+  color: #c14e20;
 }
 
 .title {
@@ -185,24 +203,14 @@ section {
 }
 
 /*Our services*/
-.articles {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-
-.articles .box {
+.box {
   -ms-flex: 0 0 33.333%;
       flex: 0 0 33.333%;
   position: relative;
   padding-right: 50px;
 }
 
-.articles .box .number {
+.box .number {
   position: absolute;
   color: #99bb89;
   font-size: 144px;
@@ -211,7 +219,68 @@ section {
   font-family: "Signika", sans-serif;
 }
 
-.articles .box p:first-of-type {
+.box p:first-of-type {
   font-weight: bold;
+}
+
+/*Our work*/
+.our_work {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  position: relative;
+  height: 300px;
+  margin-bottom: 90px;
+}
+
+.our_work:nth-child(2) p p:last-of-type, .our_work:first-child p p:last-of-type {
+  font-weight: 700;
+}
+
+.image {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  max-width: 250px;
+}
+
+.image:after {
+  content: "";
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-one:after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #3c8d83;
+  opacity: 0.5;
+  transition: transform 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.image-one:hover:after {
+  transform: translate(-20px, -20px);
+  animation: animate-one 200s ease;
+}
+
+@keyframes animate-one {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.description {
+  padding: 36px 0% 36px 55%;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
