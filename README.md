@@ -15,7 +15,7 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Example screenshot](./images/creative agency fullscreen.png)
+![Example screenshot](./images/creativeFull.png)
 
 ## Technologies
 * Tech 1 - version 1.0
