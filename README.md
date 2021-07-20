@@ -1,5 +1,5 @@
 # Creative agency
-> Here goes your awesome project description!
+> https://ollawilk.github.io/2_creative_agency_bussines_card/
 
 ## Table of contents
 * [General info](#general-info)
