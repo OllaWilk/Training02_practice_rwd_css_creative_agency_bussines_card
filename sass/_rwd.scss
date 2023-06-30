@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+  .wrap,
+  .container,
+  .form-position {
+    flex-direction: column;
+  }
+  .image {
+    max-width: 100%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+  }
+  .container > ul > li {
+    margin-right: 20px;
+  }
+  .splash .splash-inner h1 {
+    font-size: 50px;
+    word-spacing: 1px;
+  }
+  .wrap {
+    padding: 60px;
+  }
+  .description {
+    padding: 36px 5%;
+  }
+
+  article .box:nth-child(2) {
+    margin: 96px 0;
+  }
+  .box,
+  form,
+  .contact-description {
+    padding-bottom: 96px;
+  }
+  .our_work,
+  .our_work:nth-child(2),
+  .our_work:first-child,
+  .wrap {
+    margin-bottom: 0;
+  }
+  .icons li {
+    width: 50%;
+  }
+}

@@ -1,0 +1,32 @@
+.splash {
+  background-color: $color-twoo;
+  color: $color-light;
+  min-width: 500px;
+  display: flex;
+  min-height: 500px;
+
+  .splash_inner {
+    margin: auto;
+    max-width: 70%;
+
+    .page_title {
+      margin: 0;
+      font-size: 72px;
+      word-spacing: -24px;
+      font-weight: 500;
+      line-height: 1.2;
+
+      span {
+        font-size: 90px;
+        font-weight: 700;
+        color: $color-three;
+      }
+    }
+
+    .page_subtitle {
+      margin: 24px 0;
+      font-weight: 400px;
+      font-size: 16px;
+    }
+  }
+}

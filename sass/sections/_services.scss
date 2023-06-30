@@ -1,0 +1,18 @@
+.box {
+  flex: 0 0 33.333%;
+  position: relative;
+  padding-right: 50px;
+
+  .number {
+    position: absolute;
+    color: $color-three;
+    font-size: 144px;
+    line-height: 1;
+    opacity: 0.2;
+    font-family: $font-loremIpsum;
+  }
+
+  p:first-of-type {
+    font-weight: bold;
+  }
+}

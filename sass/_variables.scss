@@ -1,0 +1,23 @@
+$color-dark: #324155;
+$color-light: #f7f6f4;
+
+$color-one: #c14e20;
+$color-twoo: #0097e6;
+$color-three: #33d9b2;
+
+$font-loremIpsum: 'Signika', sans-serif;
+$font-text: 'Inconsolata', monospace;
+
+$transition: all 1s;
+
+@mixin center-position() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin box-flex() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

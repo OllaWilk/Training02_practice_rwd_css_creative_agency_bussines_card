@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-text;
+  color: $color-dark;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 96px auto 0 auto;
+}
+
+.wrap {
+  position: relative;
+  @include box-flex();
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
+  &:hover {
+    background-position: 0 100%;
+  }
+}
+
+.btn_one {
+  border-color: $color-light;
+  color: $color-light;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+  &:hover {
+    color: $color-twoo;
+  }
+}
+
+.btn_twoo {
+  border-color: $color-three;
+  color: $color-three;
+  background-image: linear-gradient(90deg, $color-three 50%, transparent 50%);
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.btn_three {
+  border-color: $color-twoo;
+  color: $color-twoo;
+  background-image: linear-gradient(90deg, $color-twoo 50%, transparent 50%);
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.btn_four {
+  border-color: $color-one;
+  color: $color-one;
+  background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.btn_five {
+  border: none;
+  margin: 36px 0;
+  padding: 0;
+  text-align: left;
+  color: $color-one;
+}
+
+.title {
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
+.article_title {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+  font-weight: bold;
+}

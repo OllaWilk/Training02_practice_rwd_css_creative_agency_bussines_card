@@ -1,0 +1,51 @@
+.navigation {
+  background-color: $color-twoo;
+  padding: 12px 36px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin-right: 36px;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: $color-light;
+        &:hover {
+          color: $color-three;
+        }
+      }
+    }
+  }
+
+  li {
+    ul {
+      display: none;
+      li {
+        display: block;
+        margin-bottom: 12px;
+        margin-right: 0;
+      }
+    }
+    &:hover ul {
+      display: block;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-top: 12px;
+      background: $color-light;
+    }
+    li a {
+      color: $color-twoo;
+      padding: 0 24px;
+      &:hover {
+        color: $color-three;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.page-footer {
+  color: $color-light;
+  margin: 20px 0;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  li {
+    display: inline-block;
+    width: 15%;
+    font-size: 0;
+    i {
+      font-size: 30px;
+      background: $color-one;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      color: $color-light;
+      border-radius: 50%;
+      text-align: center;
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+}
